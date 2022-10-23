@@ -1,0 +1,5 @@
+/ip firewall filter 
+add chain=Virus protocol=udp dst-port=1434 action=drop comment="" disabled=no 
+add chain=Virus protocol=udp dst-port=2745 action=drop comment="" disabled=no 
+add chain=Virus protocol=tcp dst-port=6344-6381 action=drop comment="" disabled=no 
+add chain=Virus protocol=udp dst-port=6344-6381 action=drop comment="" disabled=no 
